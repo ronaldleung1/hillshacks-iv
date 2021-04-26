@@ -7,7 +7,9 @@ import {
   Text,
   Button, 
   Image,
-  Container
+  Container,
+  Card,
+  Flex
 } from 'theme-ui';
 import React from 'react';
 
@@ -18,19 +20,23 @@ const Index = (props) => (
       sx={{
         width: '100%',
         textAlign: 'center',
-        backgroundImage: theme => `radial-gradient(${theme.colors.slate}, ${theme.colors.sunken})`
+        backgroundImage: theme => `radial-gradient(${theme.colors.placeholder}, ${theme.colors.sunken})`
       }}>
-      <Container as="main" py={6} variant="copy" {...props}>
+      <Container as="section" py={6} variant="copy" {...props}>
       <Image
         src="/logo.png"
         alt="hillsHacks Logo"
         width={600}
+        sx={{
+          userDrag: 'none',
+          WebkitUserDrag: 'none'
+        }}
       />
         {/*<Heading variant="ultratitle">
             hillsHacks IV
     </Heading>*/}
         <Heading mt={16} variant="subtitle">There's never been a better time to build. <strong>And the world has never needed it more than now.</strong></Heading>
-        <Button as="a" variant="primary" my={2}
+        <Button variant="primary" my={2}
   href="https://github.com/lachlanjc/next-theme-starter">Register</Button>
       </Container>
     </Box>
@@ -44,30 +50,48 @@ const Index = (props) => (
     <Container as="section" py={4} {...props}>
       <Heading variant="headline">FAQ</Heading>
       <h2>Why come to hillsHacks?</h2>
-<p>Can you spend a day without using some form of technology developed in the last 5 years? It would probably be difficult - technology has completely changed the way we live our lives. Regardless of your experience, you will learn something new at hillsHacks about how computer science is being used all around us - often in things we take for granted! All students grade 6 and up are welcome.</p>
+      <p>Can you spend a day without using some form of technology developed in the last 5 years? It would probably be difficult - technology has completely changed the way we live our lives. Regardless of your experience, you will learn something new at hillsHacks about how computer science is being used all around us - often in things we take for granted! All students grade 6 and up are welcome.</p>
 
-<h2>What if I don’t know anything about coding or computer science?</h2>
-<p>No problem. We love beginners! There's a lot to learn at hillsHacks, and we hope you will leave inspired.</p>
+      <h2>Where will the event take place?</h2>
+      <p>We're taking hillsHacks virtually this year and will be using Zoom and email as our sole means of communication. Even though we can't physically gather, we'll strive for an authentic experience that retains the spirit of hacking!</p>
 
-<h2>I’m an expert at coding. What do I get out of this event?</h2>
-<p>Take a look at some of our advanced workshops like ___!</p>
+      <h2>What if I don’t know anything about coding or computer science?</h2>
+      <p>No problem! We highly encourage beginners to come, and our workshops will give you opportunities to learn about fundamental CS concepts. After creating an idea for the design challenge, you'll be ready to implement it on your own!</p>
 
-<h2>This sounds like a long day, will there be food?</h2>
-<p>Of course! All participants will be given lunch and dinner. Snacks will also be available throughout the day.</p>
-
-<h2>Do I need to bring my own computer?</h2>
-<p>You are welcome to bring own computer. If you forget yours, don't worry, we have Chromebooks for everyone to use!</p>
-
-<h2>Sounds great! Where is it?</h2>
-<p>It's at Watchung Hills Regional High School, 108 Stirling Rd, Warren, NJ 07059. You should enter through the main entrance at the front of the school.</p>
+      <h2>I’m an expert at coding. What do I get out of this event?</h2>
+      <p>Take a look at some of our advanced workshops like ___! Also, we recommend you to actively engage during our Panel Q&A session (this applies to beginners too!)</p>
+      
+      <h2>When do I have to register by?</h2>
+      <p>Registrations are free and are open until the day of the event. However, we encourage you to sign up early so we can get a better feel of who will be attending.</p>
       <br/>
+    </Container>
+    <Container as="section" py={4} {...props}>
+      <Card>
+        <Flex>
+          <Box sx={{ flex: '1 1 auto' }}>
+            <Heading as="h1" variant="headline">So...what are you waiting for?</Heading>
+            <Heading variant="subtitle">Registration is free and only takes a minute!</Heading>
+          </Box>
+          <Box sx={{alignSelf: "center"}}>
+          <Button variant="primary" mr={4}
+  href="https://github.com/lachlanjc/next-theme-starter">Register Now</Button>
+          </Box>
+        </Flex>
+      </Card>
     </Container>
   </>
 )
 
 export default Index;
 
-/*export default props => <Container as="main" py={4} variant="copy" {...props} />
+/*
+navbar?
+cards with perks
+schedule
+register (put in box)
+footer with link to source
+
+export default props => <Container as="main" py={4} variant="copy" {...props} />
 
 # hillsHacks IV
 
