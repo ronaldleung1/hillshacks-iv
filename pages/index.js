@@ -6,17 +6,29 @@ import {
   Heading,
   Text,
   Button, 
+  Image,
   Container
 } from 'theme-ui';
 import React from 'react';
 
 const Index = (props) => (
   <>
-    <Box bg="sunken" sx={{width: '100%', textAlign: 'center'}}>
+    <Box 
+      bg="sunken" 
+      sx={{
+        width: '100%',
+        textAlign: 'center',
+        backgroundImage: theme => `radial-gradient(${theme.colors.slate}, ${theme.colors.sunken})`
+      }}>
       <Container as="main" py={6} variant="copy" {...props}>
-        <Heading variant="ultratitle">
+      <Image
+        src="/logo.png"
+        alt="hillsHacks Logo"
+        width={600}
+      />
+        {/*<Heading variant="ultratitle">
             hillsHacks IV
-        </Heading>
+    </Heading>*/}
         <Heading mt={16} variant="subtitle">There's never been a better time to build. <strong>And the world has never needed it more than now.</strong></Heading>
         <Button as="a" variant="primary" my={2}
   href="https://github.com/lachlanjc/next-theme-starter">Register</Button>
