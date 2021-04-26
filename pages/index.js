@@ -7,18 +7,18 @@ import {
   Text,
   Button, 
   Container
-} from 'theme-ui'
+} from 'theme-ui';
 import React from 'react';
 
 const Index = (props) => (
   <>
-    <Box bg="sunken" sx={{width: '100%'}} sx={{textAlign: 'center'}}>
-      <Container as="main" py={4} variant="copy" {...props}>
+    <Box bg="sunken" sx={{width: '100%', textAlign: 'center'}}>
+      <Container as="main" py={6} variant="copy" {...props}>
         <Heading variant="ultratitle">
             hillsHacks IV
         </Heading>
         <Heading mt={16} variant="subtitle">There's never been a better time to build. <strong>And the world has never needed it more than now.</strong></Heading>
-        <Button as="a" my={2}
+        <Button as="a" variant="primary" my={2}
   href="https://github.com/lachlanjc/next-theme-starter">Register</Button>
       </Container>
     </Box>
