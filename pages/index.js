@@ -9,7 +9,8 @@ import {
   Image,
   Container,
   Card,
-  Flex
+  Flex,
+  Link
 } from 'theme-ui';
 import React from 'react';
 
@@ -62,13 +63,13 @@ const Index = (props) => (
       <p>Take a look at some of our advanced workshops like ___! Also, we recommend you to actively engage during our Panel Q&A session (this applies to beginners too!)</p>
       
       <h2>When do I have to register by?</h2>
-      <p>Registrations are free and are open until the day of the event. However, we encourage you to sign up early so we can get a better feel of who will be attending.</p>
+      <p>Registration is free and the signup form will remain open until the day of the event. However, we encourage you to sign up early so we can get a better feel of who will be attending.</p>
       <br/>
     </Container>
     <Container as="section" py={4} {...props}>
       <Card>
-        <Flex>
-          <Box sx={{ flex: '1 1 auto' }}>
+        <Flex sx={{flexWrap: 'wrap'}}>
+          <Box sx={{flex: '1 1 auto'}}>
             <Heading as="h1" variant="headline">So...what are you waiting for?</Heading>
             <Heading variant="subtitle">Registration is free and only takes a minute!</Heading>
           </Box>
@@ -79,6 +80,9 @@ const Index = (props) => (
         </Flex>
       </Card>
     </Container>
+    <footer sx={{textAlign: "center", padding: 4}}>
+      <Text sx={{fontSize: 1}}>Created with &#x3C;3 by hillsHacks. See the <Link href="https://github.com/googol88/hillshacks-iv">source</Link>.</Text>
+    </footer>
   </>
 )
 
