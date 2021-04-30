@@ -1,6 +1,6 @@
-# Next Theme Starter
+# hillsHacks IV
 
-A sample [Next.js] project for getting started with [MDX] & [Theme UI].
+The source of the website powering hillsHack's fourth annual hackathon. Made with Next.js and Theme UI
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Flachlanjc%2Fnext-theme-starter&repository-name=next-theme-starter)
 
