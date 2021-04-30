@@ -21,22 +21,23 @@ const Index = (props) => (
       sx={{
         width: '100%',
         textAlign: 'center',
-        backgroundImage: theme => `radial-gradient(${theme.colors.placeholder}, ${theme.colors.sunken})`
+        backgroundImage: theme => `radial-gradient(${theme.colors.gradientMid}, ${theme.colors.gradientOut})`
       }}>
       <Container as="section" py={6} variant="copy" {...props}>
-      <Image
-        src="/logo.png"
-        alt="hillsHacks Logo"
-        width={600}
-        sx={{
-          userDrag: 'none',
-          WebkitUserDrag: 'none'
-        }}
-      />
+        <Image
+          src="/logo.png"
+          alt="hillsHacks Logo"
+          width={600}
+          sx={{
+            userDrag: 'none',
+            WebkitUserDrag: 'none'
+          }}
+        />
         {/*<Heading variant="ultratitle">
             hillsHacks IV
     </Heading>*/}
-        <Heading mt={16} variant="subtitle">There's never been a better time to build. <strong>And the world has never needed it more than now.</strong></Heading>
+        <Heading mt={16} variant="subtitle" color="light">There's never been a better time to build. <strong>And the world has never needed it more than now.</strong></Heading>
+        <Heading variant="subtitle" color="light">June 5, 2021</Heading>
         <Button variant="primary" my={2}
   href="https://github.com/lachlanjc/next-theme-starter">Register</Button>
       </Container>
@@ -81,7 +82,8 @@ const Index = (props) => (
       </Card>
     </Container>
     <footer sx={{textAlign: "center", padding: 4}}>
-      <Text sx={{fontSize: 1}}>Created with &#x3C;3 by hillsHacks. See the <Link href="https://github.com/googol88/hillshacks-iv">source</Link>.</Text>
+      <Text as="p" mb={2} sx={{fontSize: 1}}>Created with &#x3C;3 by hillsHacks. See the <Link href="https://github.com/googol88/hillshacks-iv">source</Link>.</Text>
+      <Text as="p" sx={{fontSize: 1, color: "muted"}}>© Copyright 2020 hillsHacks</Text>
     </footer>
   </>
 )
