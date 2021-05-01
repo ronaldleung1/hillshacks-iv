@@ -8,6 +8,7 @@ import {
   Button, 
   Image,
   Container,
+  Grid,
   Card,
   Flex,
   Link
@@ -44,8 +45,8 @@ const Index = (props) => (
     </Box>
     <Container as="section" py={4} variant="copy" {...props}>
       <Heading variant="headline">This is not your typical hackathon.</Heading>
-      <Text as="p" mb={3}><b>hillsHacks was born with a mission:</b> to show the world that computer science is more than memorizing technical jargon and stuffing code into machines. CS is for innovators, creators, problem solvers, artists, and <i>you</i>. And at hillsHacks, we'll show you the ropes .</Text>
-      <Text as="p" mb={3}>Rather than leave you alone for 12 hours expecting you to come out with __, we'll guide you through with workshops from Watchung Hills alumni and provide one-on-one mentorship. You'll implement your ideas in our design challenge without code, so you won't have to stress over the details.</Text>
+      <Text as="p" sx={{fontSize: 2}} mb={3}><b>hillsHacks was born with a mission:</b> to show that computer science is something anyone can learn. It's more than memorizing technical jargon and stuffing code into machines. CS is for innovators, creators, problem solvers, artists, and <i>you</i>.</Text>
+      <Text as="p" sx={{fontSize: 2}} mb={3}>Rather than leave you alone for 12 hours expecting a full-fledged product launch, we'll guide you through the learning process with workshops from Watchung Hills alumni and provide you one-on-one mentorship. Deviating from the traditional hackathon, you'll implement your ideas in our design challenge without needing to code, so when you leave you'll be ready to put your new-found skills into action.</Text>
       <Text variant="lead">This is the fourth iteration of hillsHacks, Watchung Hills' premier hackathon open to grades 6 through 12.</Text>
       <br/>
     </Container>
@@ -66,6 +67,39 @@ const Index = (props) => (
       <h2>When do I have to register by?</h2>
       <p>Registration is free and the signup form will remain open until the day of the event. However, we encourage you to sign up early so we can get a better feel of who will be attending.</p>
       <br/>
+    </Container>
+    <Container as="section" py={4} {...props}>
+      <Heading variant="headline" mb={4} sx={{textAlign: "center"}}>Schedule</Heading>
+      <Container variant="copy">
+        <Card>
+          <Heading as="h2" mb={0} variant="subheadline">Opening Ceremony</Heading>
+        </Card>
+        <Grid gap={4} my={4} columns={[1, null, 2]}>
+          <Card>
+            <Heading as="h2" mb={0} variant="subheadline">Workshop</Heading>
+            <Heading as="h3" mb={2} sx={{fontSize: 2, fontWeight: "normal"}}>Event Speaker</Heading>
+            <Text as="p">Description</Text>
+          </Card>
+          <Card>
+            <Heading as="h2" mb={0} variant="subheadline">Workshop</Heading>
+            <Heading as="h3" mb={2} sx={{fontSize: 2, fontWeight: "normal"}}>Event Speaker</Heading>
+            <Text as="p">Description</Text>
+          </Card>
+          <Card>
+            <Heading as="h2" mb={0} variant="subheadline">Workshop</Heading>
+            <Heading as="h3" mb={2} sx={{fontSize: 2, fontWeight: "normal"}}>Event Speaker</Heading>
+            <Text as="p">Description</Text>
+          </Card>
+          <Card>
+            <Heading as="h2" mb={0} variant="subheadline">Workshop</Heading>
+            <Heading as="h3" mb={2} sx={{fontSize: 2, fontWeight: "normal"}}>Event Speaker</Heading>
+            <Text as="p">Description</Text>
+          </Card>
+        </Grid>
+        <Card>
+          <Heading as="h2" mb={0} variant="subheadline">Closing Ceremony</Heading>
+        </Card>
+      </Container>
     </Container>
     <Container as="section" py={4} {...props}>
       <Card>
@@ -96,16 +130,4 @@ cards with perks
 schedule
 register (put in box)
 footer with link to source
-
-export default props => <Container as="main" py={4} variant="copy" {...props} />
-
-# hillsHacks IV
-
-There's never been a better time to build. And the world has never needed it more than now.
-
-This is the fourth iteration of hillsHacks, Watchung Hills' premier hackathon open to grades 7 through 12.
-
-[@lachlanjc/next-theme-starter](https://github.com/lachlanjc/next-theme-starter)
-
-<Button as="a"
-href="https://github.com/lachlanjc/next-theme-starter">GitHub</Button>*/
+*/
