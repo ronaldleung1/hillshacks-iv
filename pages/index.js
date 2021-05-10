@@ -13,6 +13,7 @@ import {
   Flex,
   Link
 } from 'theme-ui';
+import Event from "../components/event"
 import React from 'react';
 
 const Index = (props) => (
@@ -71,34 +72,36 @@ const Index = (props) => (
     <Container as="section" py={4} {...props}>
       <Heading variant="headline" mb={4} sx={{textAlign: "center"}}>Schedule</Heading>
       <Container variant="copy">
-        <Card>
-          <Heading as="h2" mb={0} variant="subheadline">Opening Ceremony</Heading>
-        </Card>
+        <Event
+          name="Opening Ceremony"
+          description="hillsHacks begins with the opening ceremony, where we'll introduce the theme of the designathon and go over the schedule for the rest of the event."
+        />
         <Grid gap={4} my={4} columns={[1, null, 2]}>
-          <Card>
-            <Heading as="h2" mb={0} variant="subheadline">Workshop</Heading>
-            <Heading as="h3" mb={2} sx={{fontSize: 2, fontWeight: "normal"}}>Event Speaker</Heading>
-            <Text as="p">Description</Text>
-          </Card>
-          <Card>
-            <Heading as="h2" mb={0} variant="subheadline">Workshop</Heading>
-            <Heading as="h3" mb={2} sx={{fontSize: 2, fontWeight: "normal"}}>Event Speaker</Heading>
-            <Text as="p">Description</Text>
-          </Card>
-          <Card>
-            <Heading as="h2" mb={0} variant="subheadline">Workshop</Heading>
-            <Heading as="h3" mb={2} sx={{fontSize: 2, fontWeight: "normal"}}>Event Speaker</Heading>
-            <Text as="p">Description</Text>
-          </Card>
-          <Card>
-            <Heading as="h2" mb={0} variant="subheadline">Workshop</Heading>
-            <Heading as="h3" mb={2} sx={{fontSize: 2, fontWeight: "normal"}}>Event Speaker</Heading>
-            <Text as="p">Description</Text>
-          </Card>
+          <Event
+            name="Workshop"
+            speaker="Event Speaker"
+            description="Description"
+          />
+          <Event
+            name="Workshop"
+            speaker="Event Speaker"
+            description="Description"
+          />
+          <Event
+            name="Workshop"
+            speaker="Event Speaker"
+            description="Description"
+          />
+          <Event
+            name="Workshop"
+            speaker="Event Speaker"
+            description="Description"
+          />
         </Grid>
-        <Card>
-          <Heading as="h2" mb={0} variant="subheadline">Closing Ceremony</Heading>
-        </Card>
+        <Event
+          name="Closing Ceremony"
+          description="hillsHacks wraps up with an announcement of the winners and distribution of prizes!"
+        />
       </Container>
     </Container>
     <Container as="section" py={4} {...props}>
