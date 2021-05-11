@@ -35,9 +35,6 @@ const Index = (props) => (
             WebkitUserDrag: 'none'
           }}
         />
-        {/*<Heading variant="ultratitle">
-            hillsHacks IV
-    </Heading>*/}
         <Heading mt={16} variant="subtitle" color="light">There's never been a better time to build. <strong>And the world has never needed it more than now.</strong></Heading>
         <Heading variant="subtitle" color="light">June 5, 2021</Heading>
         <Button variant="primary" my={2}
@@ -63,7 +60,7 @@ const Index = (props) => (
       <p>No problem! We highly encourage beginners to come, and our workshops will give you opportunities to learn about fundamental CS concepts. After creating an idea for the design challenge, you'll be ready to implement it on your own!</p>
 
       <h2>I’m an expert at coding. What do I get out of this event?</h2>
-      <p>Take a look at some of our advanced workshops like ___! Also, we recommend you to actively engage during our Panel Q&A session (this applies to beginners too!)</p>
+      <p>Take a look at some of our advanced workshops! Also, we recommend you to actively engage during our Panel Q&A session (this applies to beginners too!)</p>
       
       <h2>When do I have to register by?</h2>
       <p>Registration is free and the signup form will remain open until the day of the event. However, we encourage you to sign up early so we can get a better feel of who will be attending.</p>
@@ -73,32 +70,38 @@ const Index = (props) => (
       <Heading variant="headline" mb={4} sx={{textAlign: "center"}}>Schedule</Heading>
       <Container variant="copy">
         <Event
+          from="10:00" to="10:15"
           name="Opening Ceremony"
           description="hillsHacks begins with the opening ceremony, where we'll introduce the theme of the designathon and go over the schedule for the rest of the event."
         />
         <Grid gap={4} my={4} columns={[1, null, 2]}>
           <Event
+            from="10:15" to="11:15"
             name="Workshop"
             speaker="Event Speaker"
             description="Description"
           />
           <Event
+            from="11:15" to="12:15"
             name="Workshop"
             speaker="Event Speaker"
             description="Description"
           />
           <Event
+            from="1:00" to="2:00"
             name="Workshop"
             speaker="Event Speaker"
             description="Description"
           />
           <Event
+            from="2:00" to="3:00"
             name="Workshop"
             speaker="Event Speaker"
             description="Description"
           />
         </Grid>
         <Event
+          from="10:00" to="10:15"
           name="Closing Ceremony"
           description="hillsHacks wraps up with an announcement of the winners and distribution of prizes!"
         />
