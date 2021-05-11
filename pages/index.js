@@ -54,7 +54,7 @@ const Index = (props) => (
       <p>Can you spend a day without using some form of technology developed in the last 5 years? It would probably be difficult - technology has completely changed the way we live our lives. Regardless of your experience, you will learn something new at hillsHacks about how computer science is being used all around us - often in things we take for granted! All students grade 6 and up are welcome.</p>
 
       <h2>Where and when will the event take place?</h2>
-      <p>We're taking hillsHacks virtually this year and will be using Zoom and email as our sole means of communication. Even though we can't physically gather, we'll strive for an authentic experience that retains the spirit of hacking!</p>
+      <p>hillsHacks will run as a hybrid event. Watchung Hills students may attend in-person at the high school or virtually from home, but all other attendees must attend virtually via Zoom. Even though things will be different this year, we'll strive for an authentic experience that retains the spirit of hacking!</p>
       <p>The event will take place on <b>Saturday, June 5, from 10:00 AM to 4:30 PM.</b></p>
 
       <h2>What if I don’t know anything about coding or computer science?</h2>
@@ -66,7 +66,7 @@ const Index = (props) => (
       <h2>How much does this cost?</h2>
       <p>hillsHacks is completely free!</p>
       <h2>When do I have to register by?</h2>
-      <p>The signup form will remain open until June 5th, the day of the event. However, we encourage you to sign up early so we can get a better feel of who will be attending.</p>
+      <p>The signup form will remain open until May 28th. This is so we can get a better feel of who will be attending.</p>
       <br/>
     </Container>
     <Container as="section" variant="copy" sx={{textAlign: "center"}} py={4} {...props}>
