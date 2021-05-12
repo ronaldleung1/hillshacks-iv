@@ -66,7 +66,7 @@ const Index = (props) => (
       <h2>How much does this cost?</h2>
       <p>hillsHacks is completely free!</p>
       <h2>When do I have to register by?</h2>
-      <p>The signup form will remain open until May 28th. This is so we can get a better feel of who will be attending.</p>
+      <p>The signup form will remain open until May 30th. This is so we can get a better feel of who will be attending.</p>
       <br/>
     </Container>
     <Container as="section" variant="copy" sx={{textAlign: "center"}} py={4} {...props}>
