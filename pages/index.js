@@ -72,7 +72,7 @@ const Index = (props) => (
       <Heading variant="headline">This is not your typical hackathon.</Heading>
       <Text as="p" sx={{fontSize: 2}} mb={3}><b>hillsHacks was born with a mission:</b> to show that computer science is something anyone can learn. It's more than memorizing technical jargon and stuffing code into machines. CS is for innovators, creators, problem solvers, artists, and <i>you</i>.</Text>
       <Text as="p" sx={{fontSize: 2}} mb={3}>Rather than leave you alone expecting a full-fledged product launch at the end of the day, we'll guide you through the learning process with workshops from Watchung Hills alumni. Plus, we'll provide you one-on-one mentorship and an opportunity to listen in and ask questions about tech during our Panel Q&A session. Deviating from the traditional hackathon, you'll implement your ideas in our design challenge without needing to code, so when you leave you'll be ready to put your new-found skills into action.</Text>
-      <Text variant="lead">This is the fourth iteration of hillsHacks, Watchung Hills' premier hackathon open to grades 6 through 12.</Text>
+      <Text variant="lead"><b>This is the fourth iteration of hillsHacks, Watchung Hills' premier hackathon open to grades 6 through 12.</b></Text>
       <br/>
     </Container>
     <Container as="section" py={4} {...props}>
@@ -93,7 +93,7 @@ const Index = (props) => (
       <h2>How much does this cost?</h2>
       <p>hillsHacks is completely free!</p>
       <h2>When do I have to register by?</h2>
-      <p>The signup form will remain open until May 30th. This is so we can get a better feel of who will be attending.</p>
+      <p>The signup form will remain open until <b>May 30th</b>. This is so we can get a better feel of who will be attending.</p>
       <br/>
     </Container>
     <Container as="section" variant="copy" sx={{textAlign: "center"}} py={4} {...props}>

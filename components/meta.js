@@ -5,7 +5,7 @@ const makeTitle = (title, name) =>
   title === name ? title : `${title} – ${name}`
 
 const Meta = ({
-  title = 'hillsHacks IV', // page title
+  title = 'hillsHacks', // page title
   name = 'hillsHacks', // site name
   description = "Watchung Hill's 4th annual hackathon, inspiring the next generation of makers.", // page description
   image = '', // social card image URL
@@ -70,6 +70,7 @@ const Meta = ({
       href={`${url}/favicon-16x16.png`}
     />
     <link key="manifest" rel="manifest" href={`${url}/site.webmanifest`} />
+    <link href="https://api.fontshare.com/css?f[]=supreme@400,700&f[]=clash-display@400,700&display=swap" rel="stylesheet" />
     {children}
   </Head>
 )
