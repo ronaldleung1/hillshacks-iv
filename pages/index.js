@@ -23,9 +23,35 @@ const Index = (props) => (
       sx={{
         width: '100%',
         textAlign: 'center',
+        position: 'relative',
         backgroundImage: theme => `radial-gradient(${theme.colors.slate}, ${theme.colors.darkless})`
       }}>
-      <Container as="section" py={6} variant="copy" {...props}>
+      <Image
+        src="/hexagons.svg"
+        alt="hillsHacks Logo"
+        sx={{
+          position: 'absolute',
+          width: ['300px', '500px', '600px'],
+          left: `-${4}em`,
+          top: 2,
+          transform: 'rotate(180deg)',
+          userDrag: 'none',
+          WebkitUserDrag: 'none'
+        }}
+      />
+      <Image
+        src="/hexagons.svg"
+        alt="hillsHacks Logo"
+        sx={{
+          position: 'absolute',
+          width: ['300px', '500px', '600px'],
+          right: `-${4}em`,
+          bottom: 2,
+          userDrag: 'none',
+          WebkitUserDrag: 'none'
+        }}
+      />
+      <Container as="section" py={6} variant="copy" sx={{position: 'relative'}} {...props}>
         <Image
           src="/logo.png"
           alt="hillsHacks Logo"
