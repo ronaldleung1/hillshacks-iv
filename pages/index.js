@@ -31,9 +31,9 @@ const Index = (props) => (
         alt="hillsHacks Logo"
         sx={{
           position: 'absolute',
-          width: ['300px', '500px', '600px'],
+          width: ['300px', '400px', '500px', '600px'],
           left: `-${4}em`,
-          top: 2,
+          top: [4, 4, 2],
           transform: 'rotate(180deg)',
           userDrag: 'none',
           WebkitUserDrag: 'none'
@@ -44,9 +44,9 @@ const Index = (props) => (
         alt="hillsHacks Logo"
         sx={{
           position: 'absolute',
-          width: ['300px', '500px', '600px'],
+          width: ['300px', '400px', '500px', '600px'],
           right: `-${4}em`,
-          bottom: 2,
+          bottom: [4, 4, 2],
           userDrag: 'none',
           WebkitUserDrag: 'none'
         }}
