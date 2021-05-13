@@ -24,6 +24,7 @@ const Index = (props) => (
         width: '100%',
         textAlign: 'center',
         position: 'relative',
+        overflow: 'hidden',
         backgroundImage: theme => `radial-gradient(${theme.colors.slate}, ${theme.colors.darkless})`
       }}>
       <Image
@@ -63,7 +64,7 @@ const Index = (props) => (
         />
         <Heading mt={16} variant="subtitle" color="white">There's never been a better time to build. <b>And the world has never needed it more than now.</b></Heading>
         <Heading variant="subtitle" color="white">June 5, 2021</Heading>
-        <Button variant="primary" as="a" target="_blank" my={2}
+        <Button variant="lg" as="a" target="_blank" my={2}
   href="https://docs.google.com/forms/d/e/1FAIpQLScEaeNmtv_REsOml_Odf0YShWCTSifJbTEXVpzvAyvCXTrzMw/viewform?usp=sf_link">Register</Button>
       </Container>
     </Box>
@@ -107,7 +108,7 @@ const Index = (props) => (
             <Heading variant="subtitle">Registration is free and only takes a minute!</Heading>
           </Box>
           <Box sx={{alignSelf: "center"}}>
-          <Button variant="primary" as="a" target="_blank"  mr={4}
+          <Button variant="lg" as="a" target="_blank"  mr={4}
   href="https://docs.google.com/forms/d/e/1FAIpQLScEaeNmtv_REsOml_Odf0YShWCTSifJbTEXVpzvAyvCXTrzMw/viewform?usp=sf_link">Register Now</Button>
           </Box>
         </Flex>
