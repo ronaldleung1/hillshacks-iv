@@ -77,23 +77,33 @@ const Index = (props) => (
     </Container>
     <Container as="section" py={4} {...props}>
       <Heading variant="headline">FAQ</Heading>
-      <h2>Why come to hillsHacks?</h2>
-      <p>Can you spend a day without using some form of technology developed in the last 5 years? It would probably be difficult - technology has completely changed the way we live our lives. Regardless of your experience, you will learn something new at hillsHacks about how computer science is being used all around us - often in things we take for granted! All students grade 6 and up are welcome.</p>
-
-      <h2>Where and when will the event take place?</h2>
-      <p>hillsHacks will run as a hybrid event. Watchung Hills students may attend in-person at the high school or virtually from home, but all other attendees must attend virtually via Zoom. Even though things will be different this year, we'll strive for an authentic experience that retains the spirit of hacking!</p>
-      <p>The event will take place on <b>Saturday, June 5, from 10:00 AM to 4:30 PM.</b></p>
-
-      <h2>What if I don’t know anything about coding or computer science?</h2>
-      <p>No problem! We highly encourage beginners to come, and our workshops will give you opportunities to learn about fundamental CS concepts. After creating an idea for the design challenge, you'll be ready to implement it on your own!</p>
-
-      <h2>I’m an expert at coding. What do I get out of this event?</h2>
-      <p>Take a look at some of our advanced workshops! Also, we recommend you to actively engage during our Panel Q&A session (this applies to beginners too!)</p>
-      
-      <h2>How much does this cost?</h2>
-      <p>hillsHacks is completely free!</p>
-      <h2>When do I have to register by?</h2>
-      <p>The signup form will remain open until <b>May 30th</b>. This is so we can get a better feel of who will be attending.</p>
+      <Grid sx={{columnGap: 4}} columns={[1, null, 2]}>
+        <Box>
+          <h2>Why come to hillsHacks?</h2>
+          <p>Can you spend a day without using some form of technology developed in the last 5 years? It would probably be difficult - technology has completely changed the way we live our lives. Regardless of your experience, you will learn something new at hillsHacks about how computer science is being used all around us - often in things we take for granted! All students grade 6 and up are welcome.</p>
+        </Box>
+        <Box>
+          <h2>Where and when will the event take place?</h2>
+          <p>hillsHacks will run as a hybrid event. Watchung Hills students may attend in-person at the high school or virtually from home, but all other attendees must attend virtually via Zoom. Even though things will be different this year, we'll strive for an authentic experience that retains the spirit of hacking!</p>
+          <p>The event will take place on <b>Saturday, June 5, from 10:00 AM to 4:30 PM.</b></p>
+        </Box>
+        <Box>
+          <h2>What if I don’t know anything about coding or computer science?</h2>
+          <p>No problem! We highly encourage beginners to come, and our workshops will give you opportunities to learn about fundamental CS concepts. After creating an idea for the design challenge, you'll be ready to implement it on your own!</p>
+        </Box>
+        <Box>
+          <h2>I’m an expert at coding. What do I get out of this event?</h2>
+          <p>Take a look at some of our advanced workshops! Also, we recommend you to actively engage during our Panel Q&A session (this applies to beginners too!)</p>
+        </Box>
+        <Box>
+          <h2>How much does this cost?</h2>
+          <p>hillsHacks is completely free!</p>
+        </Box>
+        <Box>
+          <h2>When do I have to register by?</h2>
+          <p>The signup form will remain open until <b>May 30th</b>. This is so we can get a better feel of who will be attending.</p>
+        </Box>
+      </Grid>
       <br/>
     </Container>
     <Container as="section" variant="copy" sx={{textAlign: "center"}} py={4} {...props}>
