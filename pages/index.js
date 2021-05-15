@@ -98,7 +98,44 @@ const Index = (props) => (
     </Container>
     <Container as="section" variant="copy" sx={{textAlign: "center"}} py={4} {...props}>
       <Heading variant="headline" mb={4}>Schedule</Heading>
-      <Text>Coming soon! Check back later for details.</Text>
+      <Container variant="copy" sx={{textAlign: "left"}}>
+        <Event
+          from="10:00" to="10:15"
+          name="Opening Ceremony"
+          description="hillsHacks begins with the opening ceremony, where we'll introduce the theme of the designathon and go over the schedule for the rest of the event."
+        />
+        <Grid gap={4} my={4} columns={[1, null, 2]}>
+          <Event
+            from="10:15" to="11:15"
+            name="Workshop"
+            speaker="Event Speaker"
+            description="Description"
+          />
+          <Event
+            from="11:15" to="12:15"
+            name="Workshop"
+            speaker="Event Speaker"
+            description="Description"
+          />
+          <Event
+            from="1:00" to="2:00"
+            name="Workshop"
+            speaker="Event Speaker"
+            description="Description"
+          />
+          <Event
+            from="2:00" to="3:00"
+            name="Workshop"
+            speaker="Event Speaker"
+            description="Description"
+          />
+        </Grid>
+        <Event
+          from="10:00" to="10:15"
+          name="Closing Ceremony"
+          description="hillsHacks wraps up with an announcement of the winners!"
+        />
+      </Container>
     </Container>
     <Container as="section" py={4} {...props}>
       <Card>
