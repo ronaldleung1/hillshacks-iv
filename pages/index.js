@@ -93,7 +93,7 @@ const Index = (props) => (
         </Box>
         <Box>
           <h2>I’m an expert at coding. What do I get out of this event?</h2>
-          <p>Take a look at some of our advanced workshops! Also, we recommend you to actively engage during our Panel Q&A session (this applies to beginners too!)</p>
+          <p>Participate in the traditional hackathon track or take a look at some of our advanced workshops! Also, we recommend you to actively engage during our Panel Q&A session (this applies to beginners too!)</p>
         </Box>
         <Box>
           <h2>How much does this cost?</h2>
