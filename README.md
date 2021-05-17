@@ -1,8 +1,7 @@
 # hillsHacks IV
 
-The source of the website powering hillsHack's fourth annual hackathon. Made with Next.js and Theme UI
+The source of the website powering hillsHack's fourth annual hackathon. Made with Next.js and Theme UI.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Flachlanjc%2Fnext-theme-starter&repository-name=next-theme-starter)
 
 [next.js]: https://nextjs.org
 [mdx]: https://mdxjs.com
@@ -75,101 +74,3 @@ don’t have to re-include all the props on each page.)
 
 You can also pass children to `Meta` to quickly include custom tags inside the
 [Next.js `Head`](https://nextjs.org/docs/api-reference/next/head).
-
-### Icons
-
-No iconsets are included with this starter, but a few I recommend:
-
-- [react-bootstrap-icons](https://github.com/ismamz/react-bootstrap-icons)
-- [react-ionicons](https://github.com/zamarrowski/react-ionicons)
-- [react-feather](https://github.com/feathericons/react-feather)
-- [@geist-ui/react-icons](https://github.com/geist-org/react-icons)
-- [@hackclub/icons](https://github.com/hackclub/icons)
-
-### Adding analytics
-
-I recommend [Fathom Analytics](https://usefathom.com/ref/NXBJA2) or
-[Plausible.io](https://plausible.io)
-for simple, privacy-focused analytics.
-
-<details>
-<summary>Example `_app` with Fathom (requires `fathom-client`)</summary>
-
-```js
-import React, { useEffect } from 'react'
-import { useRouter } from 'next/router'
-import Head from 'next/head'
-
-import Meta from '../components/meta'
-import theme from '../lib/theme'
-import { ThemeProvider } from 'theme-ui'
-import * as Fathom from 'fathom-client'
-
-const App = ({ Component, pageProps }) => {
-  const router = useRouter()
-
-  useEffect(() => {
-    Fathom.load('YOURCODE', {
-      includedDomains: ['YOURDOMAIN.com'],
-      url: 'https://YOURSUB.YOURDOMAIN.com/script.js', // optional
-    })
-    const onRouteChangeComplete = () => Fathom.trackPageview()
-    router.events.on('routeChangeComplete', onRouteChangeComplete)
-    return () => {
-      router.events.off('routeChangeComplete', onRouteChangeComplete)
-    }
-  }, [])
-
-  return (
-    <ThemeProvider theme={theme}>
-      <Meta />
-      <Component {...pageProps} />
-    </ThemeProvider>
-  )
-}
-
-export default App
-```
-
-</details>
-<details>
-<summary>Example `_app` with Plausible (requires `next-plausible`)</summary>
-
-```js
-import * as React from 'react'
-import Head from 'next/head'
-
-import PlausibleProvider from 'next-plausible'
-import theme from '../lib/theme'
-import { ThemeProvider } from 'theme-ui'
-import Meta from '../components/meta'
-
-const App = ({ Component, pageProps }) => {
-  return (
-    <PlausibleProvider domain="YOURDOMAIN.com">
-      <ThemeProvider theme={theme}>
-        <Meta />
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </PlausibleProvider>
-  )
-}
-
-export default App
-```
-
-</details>
-
-## Deployment
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Flachlanjc%2Fnext-theme-starter&repo-name=next-theme-project)
-
-I highly recommend using [Vercel](https://vercel.com) for deployment. It requires no
-configuration, is totally free for personal projects, and supports all the features
-of Next.js with the best performance. Refer to [their documentation](https://vercel.com/docs#deploy-an-existing-project)
-for more details.
-
-If you’re only making a static site (e.g. no [`getServerSideProps`](https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering)
-or [API Routes](https://nextjs.org/docs/api-routes/introduction)), you can also
-deploy on [Netlify](https://netlify.com), which is also free. Refer to [their documentation](https://docs.netlify.com/configure-builds/common-configurations/#next-js)
-on the necessary configuration.
