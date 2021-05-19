@@ -126,7 +126,7 @@ const Index = (props) => (
     </Container>
     <footer sx={{textAlign: "center", padding: 4}}>
       <Text as="p" mb={2} sx={{fontSize: 1}}>Created with &#x3C;3 by hillsHacks. See the <Link href="https://github.com/googol88/hillshacks-iv">source</Link>.</Text>
-      <Text as="p" sx={{fontSize: 1, color: "muted"}}>© Copyright 2020 hillsHacks</Text>
+      <Text as="p" sx={{fontSize: 1, color: "muted"}}>© Copyright 2021 hillsHacks</Text>
     </footer>
   </>
 )
