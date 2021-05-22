@@ -96,6 +96,10 @@ const Index = (props) => (
           <p>Participate in the traditional hackathon track or take a look at some of our advanced workshops! Also, we recommend you to actively engage during our Panel Q&A session (this applies to beginners too!)</p>
         </Box>
         <Box>
+          <h2>Can I work as a team?</h2>
+          <p>Absolutelly! As part of the hackathon you can work solo or in teams of up to four individuals. Teams will be formed prior to the event, so make sure all members sign up!</p>
+        </Box>
+        <Box>
           <h2>How much does this cost?</h2>
           <p>hillsHacks is completely free!</p>
         </Box>
