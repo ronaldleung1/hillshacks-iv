@@ -75,6 +75,48 @@ const Index = (props) => (
       <Text variant="lead"><b>This is the fourth iteration of hillsHacks, Watchung Hills' premier hackathon open to grades 6 through 12.</b></Text>
       <br/>
     </Container>
+    <Container as="section" py={4} variant="copy" {...props}>
+      <Image
+        src="/eventPhoto.jpg"
+        alt="Event Photo 1"
+        m={0}
+        sx={{
+          borderRadius: 'extra',
+          /*position: 'absolute',
+          width: ['300px', '400px', '500px', '600px'],
+          right: `-${4}em`,
+          bottom: [4, 4, 2],*/
+          userDrag: 'none',
+          WebkitUserDrag: 'none'
+        }}
+      />
+      <Flex mt="3" sx={{gap: 3, flexDirection: ["column", "row", "row"]}}>
+        <Image
+          src="/eventPhoto1.jpg"
+          alt="Event Photo 2"        
+          sx={{
+            flex: 1,
+            borderRadius: 'extra',
+            userDrag: 'none',
+            WebkitUserDrag: 'none'
+          }}
+        />
+        <Image
+          src="/eventPhoto2.png"
+          alt="Event Photo 3"
+          sx={{
+            flex: 1,
+            borderRadius: 'extra',
+            /*position: 'absolute',
+            width: ['300px', '400px', '500px', '600px'],
+            right: `-${4}em`,
+            bottom: [4, 4, 2],*/
+            userDrag: 'none',
+            WebkitUserDrag: 'none'
+          }}
+        />
+    </Flex>
+    </Container>
     <Container as="section" py={4} {...props}>
       <Heading variant="headline">FAQ</Heading>
       <Grid sx={{columnGap: 4}} columns={[1, null, 2]}>
