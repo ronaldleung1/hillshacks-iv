@@ -69,7 +69,7 @@ const Index = (props) => (
       </Container>
     </Box>
     <Container as="section" py={4} variant="copy" {...props}>
-      <Heading variant="headline">This is not your typical hackathon.</Heading>
+      <Heading variant="headline" sx={{fontSize: "40px"}}>This is not your typical hackathon.</Heading>
       <Text as="p" sx={{fontSize: 2}} mb={3}><b>hillsHacks was born with a mission:</b> to show that computer science is something anyone can learn. It's more than memorizing technical jargon and stuffing code into machines. CS is for innovators, creators, problem solvers, artists, and <i>you</i>.</Text>
       <Text as="p" sx={{fontSize: 2}} mb={3}>Rather than leave you alone expecting a full-fledged product launch at the end of the day, we'll guide you through the learning process with workshops from Watchung Hills alumni. Plus, we'll provide you one-on-one mentorship and an opportunity to listen in and ask questions about tech during our Panel Q&A session. Deviating from the traditional hackathon, there will be two tracks: code and no-code, with a greater emphasis on ideas and how technology can be used for good.</Text>
       <Text variant="lead"><b>This is the fourth iteration of hillsHacks, Watchung Hills' premier hackathon open to grades 6 through 12.</b></Text>
