@@ -90,12 +90,13 @@ const Index = (props) => (
           WebkitUserDrag: 'none'
         }}
       />
-      <Flex mt="3" sx={{gap: 3, flexDirection: ["column", "row", "row"]}}>
+      <Flex mt="3" sx={{alignItems: "flex-start", gap: 3, flexDirection: ["column", "row", "row"]}}>
         <Image
           src="/eventPhoto1.jpg"
           alt="Event Photo 2"        
           sx={{
             flex: 1,
+            height: "auto",
             borderRadius: 'extra',
             userDrag: 'none',
             WebkitUserDrag: 'none'
@@ -106,6 +107,7 @@ const Index = (props) => (
           alt="Event Photo 3"
           sx={{
             flex: 1,
+            height: "auto",
             borderRadius: 'extra',
             /*position: 'absolute',
             width: ['300px', '400px', '500px', '600px'],
@@ -115,7 +117,7 @@ const Index = (props) => (
             WebkitUserDrag: 'none'
           }}
         />
-    </Flex>
+      </Flex>
     </Container>
     <Container as="section" py={4} {...props}>
       <Heading variant="headline">FAQ</Heading>
