@@ -79,24 +79,20 @@ const Index = (props) => (
       <Image
         src="/eventPhoto.jpg"
         alt="Event Photo 1"
-        m={0}
+        mb={2}
         sx={{
+          boxShadow: 'card',
           borderRadius: 'extra',
-          /*position: 'absolute',
-          width: ['300px', '400px', '500px', '600px'],
-          right: `-${4}em`,
-          bottom: [4, 4, 2],*/
           userDrag: 'none',
           WebkitUserDrag: 'none'
         }}
       />
-      <Flex mt="3" sx={{alignItems: "flex-start", gap: 3, flexDirection: ["column", "row", "row"]}}>
+      <Grid sx={{columnGap: 3}} columns={[1, 2, 2]}>
         <Image
           src="/eventPhoto1.jpg"
           alt="Event Photo 2"        
           sx={{
-            flex: 1,
-            height: "auto",
+            boxShadow: 'card',
             borderRadius: 'extra',
             userDrag: 'none',
             WebkitUserDrag: 'none'
@@ -106,18 +102,13 @@ const Index = (props) => (
           src="/eventPhoto2.png"
           alt="Event Photo 3"
           sx={{
-            flex: 1,
-            height: "auto",
+            boxShadow: 'card',
             borderRadius: 'extra',
-            /*position: 'absolute',
-            width: ['300px', '400px', '500px', '600px'],
-            right: `-${4}em`,
-            bottom: [4, 4, 2],*/
             userDrag: 'none',
             WebkitUserDrag: 'none'
           }}
         />
-      </Flex>
+      </Grid>
     </Container>
     <Container as="section" py={4} {...props}>
       <Heading variant="headline">FAQ</Heading>
