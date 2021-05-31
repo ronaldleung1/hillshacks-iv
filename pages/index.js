@@ -132,7 +132,7 @@ const Index = (props) => (
         </Box>
         <Box>
           <h2>Can I work as a team?</h2>
-          <p>Absolutelly! As part of the hackathon you can work solo or in teams of up to four individuals. Teams will be formed prior to the event, so make sure all members sign up!</p>
+          <p>Absolutely! As part of the hackathon you can work solo or in teams of up to four individuals. Teams will be formed prior to the event, so make sure all members sign up!</p>
         </Box>
         <Box>
           <h2>How much does this cost?</h2>
@@ -149,38 +149,44 @@ const Index = (props) => (
       <Heading variant="headline" mb={4}>Schedule</Heading>
       <Container variant="copy" sx={{textAlign: "left"}}>
         <Event
-          from="10:00" to="10:15"
-          name="Opening Ceremony"
-          description="hillsHacks begins with the opening ceremony, where we'll introduce the theme of the hackathon and go over the schedule for the rest of the event."
+          from="1:00" to="1:30"
+          name="Opening Ceremony and Panel Discussion"
+          description="hillsHacks begins with the opening ceremony, where we'll introduce the theme of the hackathon and go over the schedule for the rest of the event. As part of the panel discussion, you'll learn from CS experts... continue"
         />
         <Grid gap={4} my={4} columns={[1, null, 2]}>
           <Event
-            from="10:15" to="11:15"
+            from="1:30" to="2:15"
             name="Foundational Principles of Computer Science"
             speaker="Jared Pincus"
             description="Computer science is, at its core, a toolset and mindset for modeling and solving problems. In this workshop, we will explore concepts, questions, truths, and areas of theory which comprise this discipline. Get an early look at the principles taught in every collegiate CS curriculum, and learn what it means to think like a computer scientist."
           />
           <Event
-            from="11:15" to="12:15"
+            from="2:15" to="3:00"
             name="Estimating Pi using Python"
             speaker="Matt Carbone"
             description="Python is a flexible programming language that can be extremely efficient when implemented properly. In this workshop, we will run through a 'hello world' style example of how one can use Python to compute the constant pi via Monte Carlo sampling."
           />
           <Event
-            from="1:00" to="2:00"
+            from="3:05" to="3:50"
             name="Game Console Emulation"
             speaker="Calvin Khiddee-Wu"
             description="Emulators are typically a type of software which allow a host machine to behave like another. In this workshop, we will develop the fundamentals required to start an emulation project by exploring introductory computer system architecture. We will use the GameBoy as a reference to deepen our understanding."
           />
           <Event
-            from="2:00" to="3:00"
+            from="3:50" to="4:35"
             name="Web Scraping"
             speaker="James Narayanan"
             description=""
           />
         </Grid>
         <Event
-          from="10:00" to="10:15"
+          mb={4}
+          from="4:35" to="4:55"
+          name="Presentations"
+          description="Present your pitch as part of the hackathon event. Prizes will be awarded to the best projects!"
+        />
+        <Event
+          from="4:55" to="5:00"
           name="Closing Ceremony"
           description="hillsHacks wraps up with an announcement of the winners!"
         />
