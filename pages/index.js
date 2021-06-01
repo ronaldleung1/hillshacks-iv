@@ -124,9 +124,16 @@ const Index = (props) => (
           <p>Can you spend a day without using some form of technology developed in the last 5 years? It would probably be difficult - technology has completely changed the way we live our lives. Regardless of your experience, you will learn something new at hillsHacks about how computer science is being used all around us - often in things we take for granted! All students grade 6 and up are welcome.</p>
         </Box>
         <Box>
-          <h2>Where and when will the event take place?</h2>
-          <p>hillsHacks will run as a hybrid event. Watchung Hills students may attend in-person at the high school or virtually from home, but all other attendees must attend virtually via Zoom. Even though things will be different this year, we'll strive for an authentic experience that retains the spirit of hacking!</p>
-          <p>The event will take place on <b>Saturday, June 5, from 1:00 PM to 5:00 PM.</b></p>
+          <h2>Where will the event take place?</h2>
+          <p>hillsHacks will run as a hybrid event. <b>All attendees</b> may attend in-person at the high school or virtually via Zoom. Even though things will be different this year, we'll strive for an authentic experience that retains the spirit of hacking!</p>
+        </Box>
+        <Box>
+          <h2>When will hillsHacks be?</h2>
+          <p>The event will take place on <b>Saturday, June 5, from 1:00 PM to 5:00 PM.</b> We've got an action-packed schedule ahead, so sign up now! (see below for details)</p>
+        </Box>
+        <Box>
+          <h2>How much does this cost?</h2>
+          <p>hillsHacks is completely free!</p>
         </Box>
         <Box>
           <h2>What if I don’t know anything about coding or computer science?</h2>
@@ -141,12 +148,8 @@ const Index = (props) => (
           <p>Absolutely! As part of the hackathon you can work solo or in teams of up to four individuals. Teams will be formed prior to the event, so make sure all members sign up!</p>
         </Box>
         <Box>
-          <h2>How much does this cost?</h2>
-          <p>hillsHacks is completely free!</p>
-        </Box>
-        <Box>
           <h2>When do I have to register by?</h2>
-          <p>The signup form will remain open until <b>May 30th</b>. This is so we can get a better feel of who will be attending.</p>
+          <p>The signup form will remain open until <b>June 4th</b> at noon. This is so we can get a better feel of who will be attending.</p>
         </Box>
       </Grid>
       <br/>
@@ -157,7 +160,7 @@ const Index = (props) => (
         <Event
           from="1:00" to="1:30"
           name="Opening Ceremony and Panel Discussion"
-          description="hillsHacks begins with the opening ceremony, where we'll introduce the theme of the hackathon and go over the schedule for the rest of the event. As part of the panel discussion, you'll learn from CS experts... continue"
+          description="hillsHacks begins with the opening ceremony, where we'll introduce the theme of the hackathon and go over the schedule for the rest of the event. In the panel discussion, our CS experts will be ready to answer any questions you have about computer science in high school, college, or even in the workplace."
         />
         <Grid gap={4} my={4} columns={[1, null, 2]}>
           <Event
@@ -182,7 +185,7 @@ const Index = (props) => (
             from="3:50" to="4:35"
             name="Web Scraping"
             speaker="James Narayanan"
-            description=""
+            description="We’ll first introduce basic Python concepts needed to understand web scraping, then go into Beautiful Soup (a popular web scraping parsing library). We’ll be going through some of the key components of the API, then go into some useful examples that will give ideas for projects to do in the future. If time allows, we’ll also try to go into saving data with Pandas and displaying it with either JavaScript, Matplotlib, or other software."
           />
         </Grid>
         <Event
