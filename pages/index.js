@@ -11,7 +11,8 @@ import {
   Grid,
   Card,
   Flex,
-  Link
+  Link,
+  Alert
 } from 'theme-ui';
 import Event from "../components/event"
 import React from 'react';
@@ -68,6 +69,11 @@ const Index = (props) => (
   href="https://docs.google.com/forms/d/e/1FAIpQLScEaeNmtv_REsOml_Odf0YShWCTSifJbTEXVpzvAyvCXTrzMw/viewform?usp=sf_link">Register</Button>
       </Container>
     </Box>
+    <Container as="section" mt={4} variant="copy" {...props}>
+      <Alert variant="secondary">
+        <Text color="slate">Registration is extended to June 4th at noon! All students will now be able to choose between visiting in-person or virtually.</Text>
+      </Alert>
+    </Container>
     <Container as="section" py={4} variant="copy" {...props}>
       <Heading variant="headline" sx={{fontSize: "40px"}}>This is not your typical hackathon.</Heading>
       <Text as="p" sx={{fontSize: 2}} mb={3}><b>hillsHacks was born with a mission:</b> to show that computer science is something anyone can learn. It's more than memorizing technical jargon and stuffing code into machines. CS is for innovators, creators, problem solvers, artists, and <i>you</i>.</Text>
