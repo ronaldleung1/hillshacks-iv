@@ -217,11 +217,3 @@ const Index = (props) => (
 )
 
 export default Index;
-
-/*
-navbar?
-cards with perks
-schedule
-register (put in box)
-footer with link to source
-*/
