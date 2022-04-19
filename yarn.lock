@@ -486,10 +486,10 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.2.tgz#4b0f5fd448ac60b821d2486d2987948e3a099f03"
   integrity sha512-A/P4ysmFScBFyu1ZV0Mr1Y89snyQhqGwsCrkEpK+itMF+y+pMqBoPVIyakUf4LXqGWJGiGFuIerihvSG70Ad8Q==
 
-"@next/mdx@^12.1.2":
-  version "12.1.2"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-12.1.2.tgz#ebbf069aebe2c5d8445870d65b9c34e916375140"
-  integrity sha512-2eFyAanX1fae8gS3eoSG9PJAvd2PydhIPEUE6VJQsh4bAjBkmIhFhTk2RzpcR7zBo42b8XkB2SR+L0lLvipTnQ==
+"@next/mdx@^12.1.5":
+  version "12.1.5"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-12.1.5.tgz#302fbf195b406d32423f6a0317771d3b27f88e8e"
+  integrity sha512-3R8J/3jKz4bCAOWDKVhxXoUETy3eqC+zaNlgwLK7LAid3UZjioVZ+jxIJmopd1auqjpev7doKeRE2p8YG55QLg==
 
 "@next/swc-android-arm-eabi@12.1.2":
   version "12.1.2"
